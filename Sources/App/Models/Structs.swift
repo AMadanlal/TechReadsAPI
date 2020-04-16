@@ -19,7 +19,7 @@ struct Article: Content {
   let description: String?
   let url: URL?
   let urlToImage: URL?
-  let publishedAt: Date
+  let publishedAt: String?
 
   struct Source: Content {
     let id: String?
