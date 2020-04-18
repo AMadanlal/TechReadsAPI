@@ -20,7 +20,7 @@ struct Article: Content {
   let url: URL?
   let urlToImage: URL?
   let publishedAt: String?
-
+  let content: String?
   struct Source: Content {
     let id: String?
     let name: String?

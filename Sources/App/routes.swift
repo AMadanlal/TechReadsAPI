@@ -13,7 +13,7 @@ public func routes(_ router: Router) throws {
     }
 
   router.post(Article.self, at: "NewsArticleFormatter") { req, data -> String in
-    let articleDescription: String = data.description ?? "No description available"
+    let articleDescription: String = data.content ?? "No description available"
     let author: String = data.author ?? "Unknown"
     let sourceName: String = data.source.name ?? "Unknown"
     let publishedAt: String = data.publishedAt ?? "Unknown"
